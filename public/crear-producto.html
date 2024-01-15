@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publica tu producto en MerLib</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="nav nav-pills flex-column flex-sm-row justify-content-between navbar bg-main-color py-3">
+        <a href="/inicio">
+            <h3 class="text-white">MercadoLib</h3>
+        </a>
+    </nav>
+
+        <section id="creaTuProducto">
+
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Publica tu Producto</h1>
+                    <p class="lead">Solo tenes que ingresar los siguientes datos para poder publicar tu producto en nuestra pagina.</p>
+                </div>
+            </div>
+        </section>
+        <section id="registroProducto">
+            <div class="row my-5 mx-0">
+                <div class="col-md-5 m-auto">
+                    <div class="card card-body border-main-color">
+                        <h1 class="mb-5">Crear Publicación</h1>
+                        <div id="producto-error"></div>
+                        <form id="formCrearProducto">
+                            <div class="contenedorProducto">
+                                <div class="form-group">
+                                    <label for="exampleInputProduct">Nombre de tu producto</label>
+                                    <input type="text" class="form-control" name="nombreProducto" id="exampleInputProduct" placeholder="Nombre del Producto" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPrice">Precio del Producto</label>
+                                    <input type="number" class="form-control" name="precio" id="exampleInputPrice" placeholder="Precio de tu Producto" required>
+                                </div>
+                                <div class="form-group col-md-5 pl-0">
+                                    <label for="exampleInputEstate">Estado del Producto:</label>
+                                    <select name="estado" id="estadoProducto" class="form-control" required>
+                                        <option value="nuevo" selected>Nuevo</option>
+                                        <option value="usado">Usado</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Descripción del Producto</label>
+                                    <textarea class="form-control" name="descripcion" id="exampleFormControlTextarea1" placeholder="Descripcion de tu Producto" rows="3" maxlength="140" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-main-color mt-5 p-2 btn-block">Crear Publicación</button>
+                                <a class="btn btn-dark  mt-3 p-2 btn-block" href="/inicio" role="button">Cancelar</a>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="crear-producto.js"></script>
+</body>
+
+</html>

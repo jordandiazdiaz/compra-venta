@@ -1,0 +1,76 @@
+.oculto {
+    display: none !important;
+}
+
+.visible {
+    display: block !important;
+}
+
+.display-flex {
+    display: flex;
+}
+
+#faltaProducto {
+    justify-content: center;
+    margin-top: 2em;
+}
+/* #6610f2 old color */
+/* personalizacion del color primario*/
+.main-color {
+    background-color: #814beb !important;
+}
+.btn-main-color {
+    background-color: #814beb !important;
+    border-color: #ffffff !important;
+    color: #fff !important;
+}
+.btn-main-color:hover {
+    background-color: #7032eb !important;
+}
+
+.btn-outline-main-color {
+    background-color: transparent !important;
+    border-color: #814beb !important;
+    color: #814beb !important;
+}
+
+.btn-outline-main-color:hover {
+    background-color: #7032eb !important;
+    color: #fff !important;
+    border-color: #ffffff !important;
+}
+
+.bg-main-color {
+    background-color: #814beb !important;
+}
+
+.border-main-color {
+    border-color: #814beb !important;
+}
+
+/* personalizacion del color primario*/
+
+.round-border {
+    border-radius: 1.078em !important;
+}
+
+
+#background {
+    background-image: url("./img/background.png");
+}
+
+#bg-compras{
+    background-image: url("./img/background.png");
+    min-height: 90vh;
+}
+
+.input-shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem !important;
+}
+
+.card-shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+
